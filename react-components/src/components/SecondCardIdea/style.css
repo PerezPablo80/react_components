@@ -1,0 +1,37 @@
+.rectangle {
+    position: relative;
+    width: 140px;
+    height: 100px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    transition: all 0.5s ease;
+  }
+  
+  .rectangle:hover .text {
+    width: 100%;
+    background-color: rgba(185, 183, 183, 0.7);
+    height: auto;
+    overflow: scroll;
+  }
+  
+  .rectangle.clicked {
+    transform: rotate(360deg);
+  }
+  
+  .rectangle img {
+    width: 80%;
+    height: auto;
+    padding: 4px;
+    position: relative;
+  }
+  
+  .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50px;    
+    color: #000;
+    text-align: left;
+    transition: width 0.5s ease;
+  }
+  
